@@ -1,27 +1,13 @@
 import React from 'react';
+import Status from "./Status";
 import './Timeline.css';
 
 function Timeline() {
   return (
     <div className="timeline">
-      <div className="status">
-        <div className="user-info">
-          <img src="https://ga-core.s3.amazonaws.com/cms/files/files/000/000/886/original/ga-logo-gear.png" alt="General Assembly Logo" className="profile-pic" />
-          <div className="user-text">
-            <p><a href="">General Assembly</a></p>
-            <p><small>April 3 at 10:25 AM</small></p>
-          </div>
-        </div>
-        <p className="status-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ducimus beatae, eveniet magnam quam aperiam harum voluptatem, minus debitis repudiandae saepe. Enim, veritatis tempore possimus ex harum ad saepe inventore?
-        </p>
-        <hr/>
-        <div className="reaction-bar">
-          <button>Like</button>
-          <button>Comment</button>
-          <button>Share</button>
-        </div>
-      </div>
+      <Status text={"Contrary to popular belief, I know exactly what I'm doing."} pic={"https://mir-s3-cdn-cf.behance.net/project_modules/fs/53c6fd42419075.57cc3f77e7ba5.png"} user={"Tony Stark"} date={"April 3 at 10:28 AM"} />
+      <Status text={"The difference between you and me is...I'm not wearing hockey pants."} pic={"https://mir-s3-cdn-cf.behance.net/project_modules/fs/f4a4d442419075.57cc3f77e4089.png"} user={"Bruce Wayne"} date={"April 3 at 10:27 AM"} />
+      <Status text={"A fourth wall within a fourth wall. That's like...sixteen walls."} pic={"https://mir-s3-cdn-cf.behance.net/project_modules/fs/64edb642419075.57cc3f77e4ec4.png"} user={"Wade Wilson"} date={"April 3 at 10:25 AM"} />
     </div>
   );
 }
